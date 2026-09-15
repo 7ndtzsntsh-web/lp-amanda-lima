@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const buttons = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.service-card');
+  const servicosSection = document.getElementById('servicos');
 
   buttons.forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -27,6 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
           setTimeout(() => card.style.display = 'none', 300);
         }
       });
+      
+      // Auto-scroll to services section if clicked from Hero
+      if(servicosSection) {
+        servicosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   });
 });
