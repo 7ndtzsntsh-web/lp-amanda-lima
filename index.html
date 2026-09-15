@@ -49,17 +49,17 @@
   <!-- NAVBAR -->
   <nav class="fixed w-full z-50 top-0 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-slate-200" data-aos="fade-down">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <div class="flex items-center gap-3">
+      <div class="flex items-center justify-center md:justify-start gap-3">
         <img src="https://ugc.production.linktr.ee/dGG8vf2WQemYojBhUzHa_PlZmw9UNnYUpxvry?io=true&size=avatar-v3_0" class="w-10 h-10 rounded-full border border-brand-teal" alt="Dra. Amanda Lima Logo">
         <span class="font-bold text-xl tracking-tight text-slate-900">Dra. Amanda Lima</span>
       </div>
-      <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+      <div class="hidden lg:flex items-center gap-8 font-medium text-sm text-slate-600">
         <a href="#sobre" class="hover:text-brand-teal transition-colors">A Clínica</a>
         <a href="#servicos" class="hover:text-brand-teal transition-colors">Tratamentos</a>
         <a href="#faq" class="hover:text-brand-teal transition-colors">Dúvidas</a>
         <a href="#localizacao" class="hover:text-brand-teal transition-colors">Localização</a>
       </div>
-      <a href="https://api.whatsapp.com/send?phone=5548999822617&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="bg-slate-900 hover:bg-brand-teal text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all shadow-md hover:shadow-xl hover:-translate-y-0.5">
+      <a href="https://api.whatsapp.com/send?phone=5548999822617&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="bg-slate-900 hover:bg-brand-teal text-white px-5 py-2.5 md:px-6 md:py-2.5 rounded-full text-xs md:text-sm font-semibold transition-all shadow-md hover:shadow-xl hover:-translate-y-0.5">
         Agendar Consulta
       </a>
     </div>
@@ -84,7 +84,7 @@
           Atendimento especializado no Centro de Florianópolis. Cuidados integrados para você sorrir com total confiança.
         </p>
 
-        <div class="flex flex-wrap gap-3 mb-12" id="service-filters" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex flex-wrap gap-2 md:gap-3 mb-12" id="service-filters" data-aos="fade-up" data-aos-delay="200">
           <button data-filter="todos" class="filter-btn active px-5 py-2.5 rounded-full text-sm font-semibold border transition-all bg-brand-teal text-white border-brand-teal shadow-md">Todos</button>
           <button data-filter="estetica" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-600 hover:border-brand-teal hover:text-brand-teal transition-all">Estética</button>
           <button data-filter="clinico" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-600 hover:border-brand-teal hover:text-brand-teal transition-all">Limpeza</button>
@@ -188,11 +188,11 @@
         <details class="group border border-slate-200 rounded-2xl bg-slate-50 cursor-pointer">
           <summary class="flex justify-between items-center font-semibold p-6 text-slate-800">
             Dói para fazer um implante dentário?
-            <span class="transition group-open:rotate-180">
+            <span class="transition group-open:rotate-180 shrink-0 ml-4">
               <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <div class="text-slate-600 px-6 pb-6 pt-0">
+          <div class="text-slate-600 px-6 pb-6 pt-0 text-sm md:text-base leading-relaxed">
             Não. O procedimento de implante é feito sob anestesia local rigorosa. A maioria absoluta dos pacientes relata que o pós-operatório é super tranquilo e o desconforto é muito menor do que imaginavam, graças às nossas técnicas minimamente invasivas.
           </div>
         </details>
@@ -200,11 +200,11 @@
         <details class="group border border-slate-200 rounded-2xl bg-slate-50 cursor-pointer">
           <summary class="flex justify-between items-center font-semibold p-6 text-slate-800">
             De quanto em quanto tempo devo fazer limpeza (profilaxia)?
-            <span class="transition group-open:rotate-180">
+            <span class="transition group-open:rotate-180 shrink-0 ml-4">
               <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <div class="text-slate-600 px-6 pb-6 pt-0">
+          <div class="text-slate-600 px-6 pb-6 pt-0 text-sm md:text-base leading-relaxed">
             Recomendamos o retorno à clínica a cada 6 meses. No entanto, para pacientes com histórico de doenças gengivais ou uso de aparelhos, o retorno pode ser indicado a cada 3 ou 4 meses para manter a placa e o tártaro sob controle.
           </div>
         </details>
@@ -212,12 +212,49 @@
         <details class="group border border-slate-200 rounded-2xl bg-slate-50 cursor-pointer">
           <summary class="flex justify-between items-center font-semibold p-6 text-slate-800">
             Como funciona o agendamento?
-            <span class="transition group-open:rotate-180">
+            <span class="transition group-open:rotate-180 shrink-0 ml-4">
               <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <div class="text-slate-600 px-6 pb-6 pt-0">
+          <div class="text-slate-600 px-6 pb-6 pt-0 text-sm md:text-base leading-relaxed">
             O agendamento é rápido e direto via WhatsApp. Nossa equipe avalia a sua necessidade e agenda o melhor horário para uma avaliação completa na clínica em Florianópolis.
+          </div>
+        </details>
+      
+        <!-- Accordion 4 -->
+        <details class="group border border-slate-200 rounded-2xl bg-slate-50 cursor-pointer">
+          <summary class="flex justify-between items-center font-semibold p-6 text-slate-800">
+            Qual a diferença entre Clareamento e Lentes de Contato?
+            <span class="transition group-open:rotate-180 shrink-0 ml-4">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+            </span>
+          </summary>
+          <div class="text-slate-600 px-6 pb-6 pt-0 text-sm md:text-base leading-relaxed">
+            O clareamento age na pigmentação do dente natural, clareando o tom. Já as Lentes de Contato são finíssimas facetas de porcelana coladas sobre os dentes, sendo ideais para corrigir não apenas a cor, mas formato, pequenos espaços e desgastes, criando um sorriso perfeitamente alinhado.
+          </div>
+        </details>
+        <!-- Accordion 5 -->
+        <details class="group border border-slate-200 rounded-2xl bg-slate-50 cursor-pointer">
+          <summary class="flex justify-between items-center font-semibold p-6 text-slate-800">
+            Tenho fobia de dentista. Como vocês podem me ajudar?
+            <span class="transition group-open:rotate-180 shrink-0 ml-4">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+            </span>
+          </summary>
+          <div class="text-slate-600 px-6 pb-6 pt-0 text-sm md:text-base leading-relaxed">
+            A Odontologia Humanizada é nosso grande diferencial. Temos protocolos rigorosos para controle de ansiedade: utilizamos anestésicos tópicos ultra-eficazes antes da aplicação (para que você não sinta a agulha) e respeitamos totalmente o seu tempo e limites na cadeira.
+          </div>
+        </details>
+        <!-- Accordion 6 -->
+        <details class="group border border-slate-200 rounded-2xl bg-slate-50 cursor-pointer">
+          <summary class="flex justify-between items-center font-semibold p-6 text-slate-800">
+            Como funciona o pagamento dos tratamentos?
+            <span class="transition group-open:rotate-180 shrink-0 ml-4">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+            </span>
+          </summary>
+          <div class="text-slate-600 px-6 pb-6 pt-0 text-sm md:text-base leading-relaxed">
+            Nossa missão é viabilizar o seu tratamento com conforto financeiro. Trabalhamos com PIX, cartões de débito e parcelamento flexível no cartão de crédito para procedimentos de maior duração (como implantes e estética avançada).
           </div>
         </details>
       </div>
@@ -296,22 +333,22 @@
 
     <!-- FOOTER -->
   <footer class="bg-slate-950 py-16 px-6 border-t border-slate-900 mt-16 text-slate-400">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-10 text-center md:text-left">
       <!-- Brand -->
       <div class="flex flex-col gap-6">
         <div class="flex items-center gap-3">
           <img src="https://ugc.production.linktr.ee/dGG8vf2WQemYojBhUzHa_PlZmw9UNnYUpxvry?io=true&size=avatar-v3_0" class="w-12 h-12 rounded-full border-2 border-brand-teal" alt="Dra. Amanda Lima Logo">
           <span class="font-bold text-xl text-white">Dra. Amanda Lima</span>
         </div>
-        <p class="text-sm leading-relaxed max-w-xs">Especialista em odontologia avançada em Florianópolis, unindo tecnologia de ponta e atendimento humanizado para o seu melhor sorriso.</p>
-        <div class="flex gap-4">
+        <p class="text-sm leading-relaxed max-w-xs mx-auto md:mx-0">Especialista em odontologia avançada em Florianópolis, unindo tecnologia de ponta e atendimento humanizado para o seu melhor sorriso.</p>
+        <div class="flex gap-4 justify-center md:justify-start">
           <a href="https://www.instagram.com/dentistaamandalima" target="_blank" class="hover:text-brand-teal transition-colors" aria-label="Instagram">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
           </a>
         </div>
       </div>
       <!-- Links -->
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4 items-center md:items-start">
         <h4 class="text-white font-bold mb-2">Navegação Rápida</h4>
         <a href="#sobre" class="hover:text-brand-teal transition-colors text-sm w-max">A Clínica</a>
         <a href="#servicos" class="hover:text-brand-teal transition-colors text-sm w-max">Nossos Tratamentos</a>
@@ -321,11 +358,11 @@
       <!-- Contact -->
       <div class="flex flex-col gap-4">
         <h4 class="text-white font-bold mb-2">Contato</h4>
-        <p class="text-sm flex items-start gap-3">
+        <p class="text-sm flex items-start justify-center md:justify-start gap-3 text-left">
           <svg class="w-5 h-5 text-brand-teal shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
           Av. Prefeito Osmar Cunha, 505<br/>Centro, Florianópolis - SC
         </p>
-        <a href="https://api.whatsapp.com/send?phone=5548999822617" target="_blank" class="text-sm flex items-center gap-3 hover:text-brand-teal transition-colors">
+        <a href="https://api.whatsapp.com/send?phone=5548999822617" target="_blank" class="text-sm flex items-center justify-center md:justify-start gap-3 hover:text-brand-teal transition-colors">
           <svg class="w-5 h-5 text-brand-teal" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
           (48) 99982-2617
         </a>
