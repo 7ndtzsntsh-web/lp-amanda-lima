@@ -28,6 +28,30 @@
       }
     }
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Dra. Amanda Lima",
+    "image": "https://ugc.production.linktr.ee/dGG8vf2WQemYojBhUzHa_PlZmw9UNnYUpxvry?io=true&size=avatar-v3_0",
+    "url": "https://draamandalima.com.br",
+    "telephone": "+5548999999999",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Florianópolis",
+      "addressRegion": "SC",
+      "addressCountry": "BR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "128"
+    }
+  }
+  </script>
+
+  <link rel="canonical" href="https://draamandalima.com.br">
 </head>
 <body class="bg-[#f4f7fb] font-sans text-slate-800 antialiased selection:bg-brand-teal selection:text-white overflow-x-hidden">
 
@@ -70,10 +94,10 @@
 
         <!-- FILTROS (BOLINHAS) INTERATIVOS -->
         <div class="flex flex-wrap gap-3 mb-12" id="service-filters" data-aos="fade-up" data-aos-delay="200">
-          <button onclick="filterServices('todos')" class="filter-btn active px-5 py-2.5 rounded-full text-sm font-semibold border transition-all bg-brand-teal text-white border-brand-teal shadow-md">Todos</button>
-          <button onclick="filterServices('estetica')" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-600 hover:border-brand-teal hover:text-brand-teal transition-all">Estética</button>
-          <button onclick="filterServices('clinico')" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-600 hover:border-brand-teal hover:text-brand-teal transition-all">Limpeza</button>
-          <button onclick="filterServices('implantes')" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-600 hover:border-brand-teal hover:text-brand-teal transition-all">Implantes</button>
+          <button data-filter="todos" class="filter-btn active px-5 py-2.5 rounded-full text-sm font-semibold border transition-all bg-brand-teal text-white border-brand-teal shadow-md">Todos</button>
+          <button data-filter="estetica" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-600 hover:border-brand-teal hover:text-brand-teal transition-all">Estética</button>
+          <button data-filter="clinico" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-600 hover:border-brand-teal hover:text-brand-teal transition-all">Limpeza</button>
+          <button data-filter="implantes" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-600 hover:border-brand-teal hover:text-brand-teal transition-all">Implantes</button>
         </div>
       </div>
 
@@ -217,39 +241,6 @@
 
   <!-- JS ANIMATIONS & FILTERS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    // Iniciar Animações
-    AOS.init({
-      once: true,
-      duration: 800,
-      offset: 100,
-    });
-
-    // Filtros
-    function filterServices(category) {
-      const buttons = document.querySelectorAll('.filter-btn');
-      buttons.forEach(btn => {
-        btn.classList.remove('bg-brand-teal', 'text-white', 'border-brand-teal', 'shadow-md', 'active');
-        btn.classList.add('bg-white', 'text-slate-600', 'border-slate-200');
-      });
-      
-      const activeBtn = Array.from(buttons).find(b => b.getAttribute('onclick').includes(category));
-      if(activeBtn) {
-        activeBtn.classList.add('bg-brand-teal', 'text-white', 'border-brand-teal', 'shadow-md', 'active');
-        activeBtn.classList.remove('bg-white', 'text-slate-600', 'border-slate-200');
-      }
-
-      const cards = document.querySelectorAll('.service-card');
-      cards.forEach(card => {
-        if(category === 'todos' || card.dataset.category === category) {
-          card.style.display = 'block';
-          setTimeout(() => card.style.opacity = '1', 50);
-        } else {
-          card.style.opacity = '0';
-          setTimeout(() => card.style.display = 'none', 300);
-        }
-      });
-    }
-  </script>
+  <script src="js/app.js" defer></script>
 </body>
 </html>
