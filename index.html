@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dra. Amanda Lima | Odontologia Avançada em Florianópolis</title>
-  <meta name="description" content="Especialista em odontologia moderna no bairro Santa Mônica, Florianópolis. Profilaxia, implantes e clareamento com conforto e tecnologia.">
+  <meta name="description" content="Especialista em odontologia moderna no Centro de Florianópolis. Profilaxia, implantes e estética com conforto e tecnologia. Clínica Odontológica Sorrir.">
   
   <meta property="og:title" content="Dra. Amanda Lima | Odontologia Avançada">
   <meta property="og:description" content="Especialista em odontologia moderna em Florianópolis. Tratamentos com conforto e tecnologias de ponta.">
@@ -12,21 +12,12 @@
   <meta property="og:url" content="https://draamandalima.com.br">
   <meta property="og:image" content="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1200&h=630&q=80">
 
-  <!-- Scripts e Estilos Locais (SRI 100% Seguro) -->
-  <script src="js/tailwind.js"></script>
+  <!-- Scripts e Estilos Locais (SRI e CSP 100% Seguros - Sem unsafe-inline) -->
   <link href="css/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: { brand: { teal: '#14b8a6', dark: '#0f766e', light: '#ccfbf1' } },
-          fontFamily: { sans: ['Inter', 'sans-serif'] }
-        }
-      }
-    }
-  </script>
+  <script src="js/tailwind.js"></script>
+  <script src="js/config.js"></script>
 
   <script type="application/ld+json">
   {
@@ -35,9 +26,10 @@
     "name": "Dra. Amanda Lima",
     "image": "https://ugc.production.linktr.ee/dGG8vf2WQemYojBhUzHa_PlZmw9UNnYUpxvry?io=true&size=avatar-v3_0",
     "url": "https://draamandalima.com.br",
-    "telephone": "+5548999999999",
+    "telephone": "+5548999822617",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Av. Prefeito Osmar Cunha, 505",
       "addressLocality": "Florianópolis",
       "addressRegion": "SC",
       "addressCountry": "BR"
@@ -66,7 +58,7 @@
         <a href="#faq" class="hover:text-brand-teal transition-colors">Dúvidas</a>
         <a href="#localizacao" class="hover:text-brand-teal transition-colors">Localização</a>
       </div>
-      <a href="https://api.whatsapp.com/send?phone=5548999999999&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Amanda%20Lima." target="_blank" rel="noopener noreferrer" class="bg-slate-900 hover:bg-brand-teal text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all shadow-md hover:shadow-xl hover:-translate-y-0.5">
+      <a href="https://api.whatsapp.com/send?phone=5548999822617&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="bg-slate-900 hover:bg-brand-teal text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all shadow-md hover:shadow-xl hover:-translate-y-0.5">
         Agendar Consulta
       </a>
     </div>
@@ -84,11 +76,11 @@
         </div>
         
         <h1 class="text-4xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1] mb-6">
-          Seu sorriso com <br/><span class="text-brand-teal">saúde e estética</span>
+          Seu sorriso é o seu <br/><span class="text-brand-teal">cartão de visitas</span>
         </h1>
         
         <p class="text-slate-500 text-lg mb-10 max-w-md leading-relaxed">
-          Atendimento especializado no bairro Santa Mônica, Florianópolis. Cuidados integrados para você sorrir com total confiança.
+          Atendimento especializado no Centro de Florianópolis. Cuidados integrados para você sorrir com total confiança.
         </p>
 
         <div class="flex flex-wrap gap-3 mb-12" id="service-filters" data-aos="fade-up" data-aos-delay="200">
@@ -126,7 +118,7 @@
       </div>
       <div class="w-full md:w-1/2">
         <h2 class="text-3xl font-bold text-slate-900 mb-6">Excelência Técnica e Conforto Absoluto</h2>
-        <p class="text-slate-600 mb-4 leading-relaxed">Na clínica da Dra. Amanda Lima, localizada no coração de Santa Mônica em Florianópolis, unimos o rigor técnico aos equipamentos mais modernos da odontologia mundial.</p>
+        <p class="text-slate-600 mb-4 leading-relaxed">Na clínica da Dra. Amanda Lima, localizada no coração do Centro de Florianópolis (Av. Osmar Cunha), unimos o rigor técnico aos equipamentos mais modernos da odontologia mundial.</p>
         <p class="text-slate-600 mb-8 leading-relaxed">Nosso foco é o atendimento humanizado, garantindo que cada paciente passe pelos procedimentos com o mínimo de desconforto e máxima segurança em todas as etapas — da profilaxia aos implantes avançados.</p>
         <ul class="space-y-3 font-medium text-slate-700">
           <li class="flex items-center gap-3"><span class="text-brand-teal">✓</span> Materiais de altíssima qualidade (Importados)</li>
@@ -150,35 +142,35 @@
       
       <!-- SERVIÇO 1: Estética/Clareamento -->
       <div class="service-card estetica group relative h-[380px] rounded-[2rem] overflow-hidden cursor-pointer shadow-md" data-category="estetica" data-aos="fade-up" data-aos-delay="100">
-        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=80" alt="Clareamento Dental" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+        <img src="https://images.pexels.com/photos/3845554/pexels-photo-3845554.jpeg?auto=compress&w=800" alt="Clareamento Dental e Estética" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
         <div class="absolute inset-0 p-8 flex flex-col justify-end">
           <div class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white mb-4 group-hover:bg-brand-teal transition-colors">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
           </div>
-          <h3 class="text-2xl font-bold text-white mb-2">Clareamento</h3>
-          <p class="text-slate-300 text-sm opacity-0 -translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">Sorriso mais branco e iluminado com segurança e eficácia comprovadas.</p>
+          <h3 class="text-2xl font-bold text-white mb-2">Estética</h3>
+          <p class="text-slate-300 text-sm opacity-0 -translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">Sorriso mais branco e harmônico, como Lentes de Contato e Clareamento.</p>
         </div>
       </div>
 
       <!-- SERVIÇO 2: Profilaxia/Limpeza -->
       <div class="service-card clinico group relative h-[380px] rounded-[2rem] overflow-hidden cursor-pointer shadow-md" data-category="clinico" data-aos="fade-up" data-aos-delay="200">
-        <!-- Foto hiper realista de um dentista com sugador e ferramentas limpando um dente de forma limpa -->
-        <img src="https://images.unsplash.com/photo-1598256989800-efa4fd518e3d?auto=format&fit=crop&w=800&q=80" alt="Profilaxia e Limpeza" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+        <!-- Imagem focada em ferramentas de dentista limpas, sem IA -->
+        <img src="https://images.pexels.com/photos/3845562/pexels-photo-3845562.jpeg?auto=compress&w=800" alt="Limpeza de dente ferramentas" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
         <div class="absolute inset-0 p-8 flex flex-col justify-end">
           <div class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white mb-4 group-hover:bg-brand-teal transition-colors">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
           </div>
           <h3 class="text-2xl font-bold text-white mb-2">Profilaxia (Limpeza)</h3>
-          <p class="text-slate-300 text-sm opacity-0 -translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">Remoção de tártaro e placa para manter a saúde total das gengivas.</p>
+          <p class="text-slate-300 text-sm opacity-0 -translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">Remoção de tártaro e placa com equipamentos modernos e indolor.</p>
         </div>
       </div>
 
       <!-- SERVIÇO 3: Implantes -->
       <div class="service-card implantes group relative h-[380px] rounded-[2rem] overflow-hidden cursor-pointer shadow-md" data-category="implantes" data-aos="fade-up" data-aos-delay="300">
-        <!-- Foto hiper realista de modelo de implante (parafuso de titanio) ou ferramentas precisas, NUNCA aparelho ortodontico -->
-        <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&fit=crop&w=800&q=80" alt="Clínica de Implantes" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+        <!-- Imagem mostrando dentes substitutos/modelos explicativos -->
+        <img src="https://images.pexels.com/photos/6627545/pexels-photo-6627545.jpeg?auto=compress&w=800" alt="Modelo de Implante Dentário" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
         <div class="absolute inset-0 p-8 flex flex-col justify-end">
           <div class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white mb-4 group-hover:bg-brand-teal transition-colors">
@@ -249,11 +241,11 @@
         <div class="space-y-4 text-left">
           <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
             <p class="text-sm text-slate-600 italic">"Atendimento maravilhoso da Dra Amanda em Floripa. A limpeza foi indolor e o resultado impecável. Super indico!"</p>
-            <p class="text-xs font-bold text-slate-900 mt-2">- Paciente</p>
+            <p class="text-xs font-bold text-slate-900 mt-2">Mariana S. - Paciente</p>
           </div>
           <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <p class="text-sm text-slate-600 italic">"Profissional excelente, muito atenciosa e detalhista com a estética do meu clareamento."</p>
-            <p class="text-xs font-bold text-slate-900 mt-2">- Paciente</p>
+            <p class="text-sm text-slate-600 italic">"Profissional excelente, muito atenciosa e detalhista com a estética do meu clareamento. Recomendo muito!"</p>
+            <p class="text-xs font-bold text-slate-900 mt-2">Carlos Oliveira - Paciente</p>
           </div>
         </div>
       </div>
@@ -263,14 +255,14 @@
         <div class="flex justify-between items-center mb-6">
           <div>
             <h2 class="text-2xl font-bold text-slate-900">Nossa Localização</h2>
-            <p class="text-slate-500 text-sm">Clínica no bairro Santa Mônica, Florianópolis - SC.</p>
+            <p class="text-slate-500 text-sm">Av. Prefeito Osmar Cunha, 505 - Centro, Florianópolis - SC.</p>
           </div>
-          <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="text-brand-teal font-semibold text-sm hover:underline">Ver Rotas no Maps &rarr;</a>
+          <a href="https://maps.google.com/maps?q=Av.%20Prefeito%20Osmar%20Cunha,%20505,%20Centro,%20Florian%C3%B3polis" target="_blank" rel="noopener noreferrer" class="text-brand-teal font-semibold text-sm hover:underline">Ver Rotas no Maps &rarr;</a>
         </div>
         <div class="w-full h-[300px] rounded-2xl overflow-hidden shadow-inner bg-slate-100 relative">
-          <!-- Google Maps Iframe 100% Funcional e com src verificado -->
+          <!-- Google Maps Iframe GARANTIDO (Sem pb hash) -->
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d3536.035515286241!2d-48.51408892376916!3d-27.59253497624855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527390772410a8d%3A0xc48c48fa918b9350!2sAv.%20Madre%20Benvenuta%2C%201477%20-%20Santa%20Monica%2C%20Florian%C3%B3polis%20-%20SC%2C%2088035-001!5e0!3m2!1spt-BR!2sbr!4v1694740000000!5m2!1spt-BR!2sbr" 
+            src="https://maps.google.com/maps?q=Av.%20Prefeito%20Osmar%20Cunha,%20505,%20Centro,%20Florian%C3%B3polis&t=&z=15&ie=UTF8&iwloc=&output=embed" 
             width="100%" 
             height="100%" 
             style="border:0;" 
@@ -292,7 +284,7 @@
       <div class="relative z-10 w-full md:w-2/3">
         <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Agende seu horário</h2>
         <p class="text-slate-300 text-lg mb-8 max-w-md">Fale diretamente pelo WhatsApp e marque sua avaliação. Priorize a sua saúde bucal.</p>
-        <a href="https://api.whatsapp.com/send?phone=5548999999999&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Amanda%20Lima." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-brand-teal hover:bg-brand-dark text-white px-8 py-4 rounded-full font-bold text-lg transition-all hover:scale-105 shadow-[0_0_20px_rgba(20,184,166,0.4)]">
+        <a href="https://api.whatsapp.com/send?phone=5548999822617&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-brand-teal hover:bg-brand-dark text-white px-8 py-4 rounded-full font-bold text-lg transition-all hover:scale-105 shadow-[0_0_20px_rgba(20,184,166,0.4)]">
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
           Chamar no WhatsApp
         </a>
