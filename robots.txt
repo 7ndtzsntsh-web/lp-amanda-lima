@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://draamandalima.com.br/sitemap.xml
